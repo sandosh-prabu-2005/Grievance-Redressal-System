@@ -1,3 +1,7 @@
+const buffer = require('buffer');
+if (!buffer.SlowBuffer) {
+  buffer.SlowBuffer = buffer.Buffer;
+}
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
